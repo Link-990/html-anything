@@ -203,11 +203,29 @@ pnpm -F @html-anything/e2e test
 | **Qwen Coder** | `qwen` | `qwen --yolo -` |
 | **Aider** | `aider` | `aider --no-pretty --no-stream --yes-always --message-file -` |
 | **IBM Bob** | `bob` | `bob --output-format stream-json --hide-intermediary-output` |
-| **[Floatboat](https://floatboat.ai/zh/combostore/html-anything-02HZ2i)** | Floatboat Combo Skill Store | 应用内调用：在 Floatboat 中安装并使用 **html-anything** Combo Skill |
 
 > 这一层的设计直接借鉴了 [`nexu-io/open-design`](https://github.com/nexu-io/open-design) 和 [`multica-ai/multica`](https://github.com/multica-ai/multica) 的 agent 检测策略：唯一被 spawn 子进程的进程是 server route，业务进程不直接 spawn；CLI 的 stdin / stdout 用 JSON-line 协议复用，每个 CLI 一个轻 adapter，统一在 [`next/src/lib/agents/argv.ts`](next/src/lib/agents/argv.ts)。
 
 只要你已经在终端里登录过对应的 CLI（例如 `claude login`、`cursor login`），HTML Anything 直接复用同一个 session，**不要求你再贴一遍 API Key**。
+
+## 🤝 社区集成
+
+### [Floatboat](https://floatboat.ai/zh/combostore/html-anything-2bHaqL)
+
+Floatboat 可作为应用内社区集成使用。请先在 Floatboat Combo Skill Store 安装 **html-anything** Combo Skill，再在 Floatboat 应用内使用该 Skill。
+
+<table>
+<tr>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/6049b725-811c-490a-93ec-4d60436e6c98" alt="Floatboat 工作区中的 HTML Anything 任务流程" /><br/>
+<sub><b>端内工作流</b> —— 在 Floatboat 中并排查看任务上下文、HTML Anything 工作区与生成页面。</sub>
+</td>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/0f1c584a-8b5c-428a-b16c-4be3bdfc70e5" alt="在 Floatboat 中通过 HTML Anything 创建的 HTML 成品" /><br/>
+<sub><b>成品预览</b> —— 将任务需求转化为可阅读的 HTML 页面，并在 Floatboat 中查看结果。</sub>
+</td>
+</tr>
+</table>
 
 ## 🎨 Skills
 
