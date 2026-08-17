@@ -209,7 +209,7 @@ On startup we scan `PATH` (including `~/.local/bin`, `~/.bun/bin`, `/opt/homebre
 If you've already done `claude login` / `cursor login` / `gemini auth` in your terminal, HTML Anything reuses that session. **No second copy of the API key required.**
 ## Community integrations
 
-### [Floatboat](https://floatboat.ai/combostore/html-anything-3ERkni)
+### [Floatboat](https://floatboat.ai/combostore/html-anything-4a58QO)
 
 Floatboat is available as an in-app community integration. Install the **html-anything** Combo Skill from the Floatboat Combo Skill Store, then use it inside Floatboat.
 

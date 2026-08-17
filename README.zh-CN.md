@@ -210,7 +210,7 @@ pnpm -F @html-anything/e2e test
 
 ## 🤝 社区集成
 
-### [Floatboat](https://floatboat.ai/zh/combostore/html-anything-02HZ2i)
+### [Floatboat](https://floatboat.ai/zh/developer/combos/8e0c7dc5-d92b-4d76-830b-dc3bd5fa82d5)
 
 Floatboat 可作为应用内社区集成使用。请先在 Floatboat Combo Skill Store 安装 **html-anything** Combo Skill，再在 Floatboat 应用内使用该 Skill。
 
