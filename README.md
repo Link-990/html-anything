@@ -207,6 +207,24 @@ On startup we scan `PATH` (including `~/.local/bin`, `~/.bun/bin`, `/opt/homebre
 > The detection strategy and per-CLI adapter shape are borrowed directly from [`nexu-io/open-design`](https://github.com/nexu-io/open-design) and [`multica-ai/multica`](https://github.com/multica-ai/multica): one privileged process spawns CLIs, JSON-line is the wire protocol, every CLI gets a thin adapter in [`next/src/lib/agents/argv.ts`](next/src/lib/agents/argv.ts).
 
 If you've already done `claude login` / `cursor login` / `gemini auth` in your terminal, HTML Anything reuses that session. **No second copy of the API key required.**
+## Community integrations
+
+### [Floatboat](https://floatboat.ai/combostore/html-anything-4a58QO)
+
+Floatboat is available as an in-app community integration. Install the **html-anything** Combo Skill from the Floatboat Combo Skill Store, then use it inside Floatboat.
+
+<table>
+<tr>
+<td width="50%">
+<img src="docs/screenshots/floatboat-runtime.png" alt="HTML Anything running inside the Floatboat workspace" /><br/>
+<sub><b>In-app workflow</b> — Review the task context, HTML Anything workspace, and generated page side by side in Floatboat.</sub>
+</td>
+<td width="50%">
+<img src="docs/screenshots/floatboat-deliverable.png" alt="HTML deliverable created with HTML Anything in Floatboat" /><br/>
+<sub><b>Deliverable preview</b> — Turn a brief into a polished HTML page and review the result in Floatboat.</sub>
+</td>
+</tr>
+</table>
 
 ## Skills
 
